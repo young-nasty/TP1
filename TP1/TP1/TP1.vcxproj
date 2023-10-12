@@ -146,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tp1.cpp" />
-    <ClCompile Include="nim.cpp" />
+    <ClCompile Include="nim.c" />
     <ClCompile Include="nim_io.cpp" />
     <ClCompile Include="WinConsole.c" />
   </ItemGroup>

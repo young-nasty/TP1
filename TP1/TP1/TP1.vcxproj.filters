@@ -29,7 +29,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="nim.cpp">
+    <ClCompile Include="nim.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="tp1.cpp">
