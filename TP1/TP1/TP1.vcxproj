@@ -139,12 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\OneDrive\Bureau\INF155 TP1\m_distributions.h" />
-    <ClInclude Include="..\..\..\..\OneDrive\Bureau\INF155 TP1\WinConsole.H" />
+    <ClInclude Include="m_distributions.h" />
     <ClInclude Include="nim.h" />
+    <ClInclude Include="nim_io.h" />
+    <ClInclude Include="WinConsole.H" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="tp1.cpp" />
     <ClCompile Include="nim.cpp" />
+    <ClCompile Include="nim_io.cpp" />
+    <ClCompile Include="WinConsole.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
