@@ -1,7 +1,7 @@
 // WinConsole.H : Windows text console management function library
 
 // --- Function Prototypes ---
-#pragma
+#pragma once
 void clrscr(void);				//clears the contents of the console
 void clreol(void);				//clears the remainder of current output line
 void clreoscr(void);			//clears the remainder of current screen
