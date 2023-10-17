@@ -29,7 +29,7 @@ La fonction s'assure que le jeu est valide et renvoie Vrai si le jeu désiré a pu
 Pour être valide, la colonne doit exister et nombre de pièces retirées doit être <= au nombre de pièces actuellement présentes dans la colonne en question. (Module NIM)
 */
 
-void plateau_supprimer_colonne(int plateau[], int nb_colonnes,
+int plateau_supprimer_colonne(int plateau[], int nb_colonnes,
     int col_a_supprimer);
 
 /*Supprime la colonne "col_a_supprimer" du plateau.On devra donc copier les valeurs de toutes les colonnes suivantes du plateau d’une position vers la gauche. (Module NIM)*/
@@ -52,10 +52,6 @@ Le choix de l'ordinateur sera stocké dans les deux références "choix_colonne" et
 Si une erreur de produit, la fonction stocke la valeur aberrante - 1 dans les deux références "choix_colonne" et "choix_nb_pieces".
 NOTE : Dans la première partie du TP, "niveau" est inutile et la fonction se contentera d’appeler la fonction "nim_choix_ia_aleatoire". (Module NIM)
 */
-
-
-#endif
-
 
 
 #endif

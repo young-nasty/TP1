@@ -27,6 +27,9 @@
     <ClInclude Include="WinConsole.H">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="codage_numerique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="nim.c">
@@ -39,6 +42,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="WinConsole.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="m_distributions.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="codage_numerique.h" />
     <ClInclude Include="m_distributions.h" />
     <ClInclude Include="nim.h" />
     <ClInclude Include="nim_io.h" />
     <ClInclude Include="WinConsole.H" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="m_distributions.c" />
     <ClCompile Include="tp1.cpp" />
     <ClCompile Include="nim.c" />
     <ClCompile Include="nim_io.cpp" />
