@@ -22,15 +22,13 @@ int nim_jouer_tour(int plateau[], int nb_colonnes, int colonne,
 
 }
 
-int plateau_supprimer_colonne(int plateau[], int nb_colonnes,
+void plateau_supprimer_colonne(int plateau[], int nb_colonnes,
 	int col_a_supprimer) {
 	int i;
 
 	for (i = 0; i < nb_colonnes - col_a_supprimer; i++) {
 		plateau[col_a_supprimer + i] = plateau[col_a_supprimer + i + 1];
 	}
-
-	return plateau;
 }
 
 int plateau_defragmenter(int plateau[], int nb_colonnes) {

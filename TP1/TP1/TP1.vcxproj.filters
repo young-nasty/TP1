@@ -35,10 +35,10 @@
     <ClCompile Include="nim.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="tp1.cpp">
+    <ClCompile Include="tp1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="nim_io.cpp">
+    <ClCompile Include="nim_io.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="WinConsole.c">
