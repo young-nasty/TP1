@@ -32,20 +32,20 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="nim.c">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="tp1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="nim_io.c">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WinConsole.c">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nim.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="m_distributions.c">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,8 +5,13 @@
 /*******************************************************************************/
 
 #pragma once
+
+#define _CRT_SECURE_NO_WARNINGS
 #include "nim.h"
 #include "WinConsole.H"
+#include <stdlib.h>
+#include<stdio.h>
+
 int lire_entier(int min, int max);
 /*Demande à l'usager de saisir un entier entre les bornes "min" et "max" (inclusivement). La fonction doit valider la saisie et redemander
 à l'usager de saisir une valeur jusqu'à l'obtention d'une valeur satisfaisante.
