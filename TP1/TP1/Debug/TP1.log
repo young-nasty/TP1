@@ -1,4 +1,4 @@
-﻿  nim_io.c
-  tp1.c
-  Generating Code...
-  TP1.vcxproj -> C:\Users\victo\OneDrive\Documents\TP1\TP1\Debug\TP1.exe
+﻿  tp1.cpp
+C:\Users\Anthony\Desktop\UNI\fucking git de marde\TP1\TP1\TP1\tp1.cpp(14,7): error C2182: 'md_srand' : utilisation non conforme du type 'void'
+  nim_io.cpp
+  Génération de code en cours...

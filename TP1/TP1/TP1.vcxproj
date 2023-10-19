@@ -146,10 +146,10 @@
     <ClInclude Include="WinConsole.H" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="m_distributions.c" />
-    <ClCompile Include="tp1.c" />
-    <ClCompile Include="nim.c" />
-    <ClCompile Include="nim_io.c" />
+    <ClCompile Include="m_distributions.cpp" />
+    <ClCompile Include="tp1.cpp" />
+    <ClCompile Include="nim.cpp" />
+    <ClCompile Include="nim_io.cpp" />
     <ClCompile Include="WinConsole.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

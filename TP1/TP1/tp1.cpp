@@ -13,11 +13,13 @@ int main(void){
 	s = md_srand_interne();
 	void md_srand(s);
 
-	printf("Quelle fonction voulez-vous tester?\n1. plateau_init\n2. nim_jouer_tour\n3. plateau_supprimer_colonne\n7. Lire_entier\n");
+	printf("Quelle fonction voulez-vous tester?\n1. plateau_init\n2. nim_jouer_tour\n3. plateau_supprimer_colonne\n7. lire_entier\n8. plateau_afficher\n");
 	scanf("%d", &choix);
 
 	switch (choix) {
+
 	case 1 :
+
 		printf("Choisissez un nombre de colonnes entre 1 et %d: ", PLATEAU_MAX_COLONNES);
 		scanf("%d", &nb_colonnes);
 
@@ -28,7 +30,9 @@ int main(void){
 		}
 		system("pause");
 		break;
+
 	case 2 :
+
 		printf("Choisissez un nombre de colonnes entre 1 et %d: ", PLATEAU_MAX_COLONNES);
 		scanf("%d", &nb_colonnes);
 
@@ -46,12 +50,20 @@ int main(void){
 		printf("%s\n", retour ? "true" : "false");
 		system("pause");
 		break;
+
 	case 3 :
 
 		break;
+
 	case 7:
 		entier = lire_entier(min, max);
 		break;
+
+	case 8:
+
+		plateau_afficher(plateau, nb_colonnes, colonne);
+		break;
+
 	default :
 		break;
 	}

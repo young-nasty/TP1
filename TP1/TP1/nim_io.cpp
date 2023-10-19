@@ -1,25 +1,53 @@
+#include "nim_io.h"
 
-/*******************************************************************************/
-/*  NIM_IO.h                                                                  */
-/*  Ce module contient les fonctions necéssaires à l'implémantation du jeu NIM_IO */
-/*******************************************************************************/
+int lire_entier(int min, int max) {
+	/*Demande à l'usager de saisir un entier entre les bornes "min" et "max" (inclusivement). La fonction doit valider la saisie et redemander
+	à l'usager de saisir une valeur jusqu'à l'obtention d'une valeur satisfaisante.
+	(Module NIM_IO)
+	*/
+	int entier = 0;
 
-#pragma once
+	do {
+		printf("\n Saisir une valeur entre : %d et %d\n", min, max);
+		scanf("%d", &entier);
 
-#define _CRT_SECURE_NO_WARNINGS
-#include "nim.h"
-#include "WinConsole.H"
-#include <stdlib.h>
-#include<stdio.h>
-#include <conio.h>
+		if (entier > max || entier < min) {
+			printf("\n Valeur incorrecte, recommencez svp");
+		}
 
-int lire_entier(int min, int max);
-/*Demande à l'usager de saisir un entier entre les bornes "min" et "max" (inclusivement). La fonction doit valider la saisie et redemander
-à l'usager de saisir une valeur jusqu'à l'obtention d'une valeur satisfaisante.
-(Module NIM_IO)
-*/
+	} while (entier < min || entier > max);
 
-void plateau_afficher(const int plateau[], int nb_colonnes, int col_select);
+	return entier;
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+void plateau_afficher(const int plateau[], int nb_colonnes, int col_select) {
+
+	int x = 0;
+	int y = 4;
+	int i = 35;
+	int j = 0;
+
+
+
+	gotoxy(x, y);
+
+	for (i; i > 0; i--) {
+	
+		printf("%d", i);
+		y++;
+		gotoxy(x, y);
+	}
+
+	for (nb_colonnes;nb_colonnes >= 0; nb_colonnes--) {
+		gotoxy(x, j);
+		printf("%d", j);
+		j++;
+	}
+
+}
 
 /*Affiche la configuration du plateau à l'écran. Elle affiche chaque colonne en mettant une pièce (étoile) par ligne,
 selon le nombre de pièces présentes dans la colonne en question. Les numéros de colonnes ainsi qu’une colonne de chiffres à gauche indiquant
@@ -29,25 +57,44 @@ Le positionnement et l’affichage de l’étoile doit être fait avec une sous - fonc
 des messages et des saisies. (Module NIM_IO)
 */
 
-static int choisir_colonne(int plateau[], int nb_colonnes);
+//static int choisir_colonne(int plateau[], int nb_colonnes) {
+
+	//int coter = 0;
+
+	
+	//	coter = _getch();
+
+
+	/*
+	fleche gauche = 75
+	fleche droite = 77
+	espace		  = 32
+	enter		  = */
+
+//}
 
 /*Permet de choisir une colonne du plateau de jeu avec les touches fléchées(gauche, droite) ou l’espace(‘ ‘).
 Au départ, on commence par la colonne[0].La colonne actuellement sélectionnée sera toujours affichée en ROUGE avec la fonction "plateau_afficher".
 Le choix définitif est fait avec la touche ENTER et on retourne le numéro de la colonne choisie. (Module NIM_IO)*/
 
-void tour_humain(int plateau[], int nb_colonnes);
+//void tour_humain(int plateau[], int nb_colonnes) {
+
+//}
 
 /*Déclenche le tour de l'humain en demandant à l'usager de choisir la colonne(avec un appel à "choisir_colonne") et le nombre
 de pièces à retirer du plateau de jeu.Une fois le choix effectué, la fonction doit faire appel à "nim_jouer_tour" pour appliquer
 les changements au plateau. (Module NIM_IO) */
 
-void tour_ia(int plateau[], int nb_colonnes, double difficulte);
+//void tour_ia(int plateau[], int nb_colonnes, double difficulte) {
+
+//}
 
 /*Déclenche le tour de l'ordinateur. Pour connaitre le choix de l'ordinateur, on fait appel à la fonction "nim_choix_ia".
 
 Une fois le choix effectué, la fonction doit faire appel à "nim_jouer_tour" pour appliquer les changements au plateau. (Module NIM_IO)*/
 
-void demarrer_jeu(int niveau);
+//void demarrer_jeu(int niveau){
+//}
 
 /*Fonction qui contrôle le jeu de nim : elle donne la main, tour à tour, à chacun des deux joueurs et déclare le gagnant une fois la partie terminée.
 On quitte cette fonction quand la partie est terminée.

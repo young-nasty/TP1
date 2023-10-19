@@ -5,7 +5,7 @@
 void clrscr(void);				//clears the contents of the console
 void clreol(void);				//clears the remainder of current output line
 void clreoscr(void);			//clears the remainder of current screen
-void gotoxy(int ,int );		    //positions text cursor at (x, y) screen position
+void gotoxy(int ,int );		    //positions text cursor at (x, y) screen position               utiliser
 int  wherex();					//returns current text cursor (x) coordinate
 int  wherey();					//returns current text cursor (y) coordinate
 void delay(unsigned int);	    //will force execution to "sleep" for given milliseconds
